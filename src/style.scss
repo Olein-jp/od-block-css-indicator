@@ -1,0 +1,27 @@
+/* 標準の選択・ホバー・ドラッグ表示を優先し、レイアウトを変えない。 */
+.editor-styles-wrapper :where(.od-block-css-indicator--highlighted):not(.is-selected):not(.is-multi-selected):not(.is-hovered):not(.is-dragging) {
+	outline: 1px dashed var(--od-block-css-indicator-color, #64748b);
+	outline-offset: 2px;
+}
+
+.od-block-css-indicator__badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 0 8px;
+	min-height: 48px;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+
+	> span:first-child {
+		color: var(--od-block-css-indicator-color, #64748b);
+		font-size: 18px;
+	}
+}
+
+.od-block-css-indicator__preview {
+	outline: 1px dashed var(--od-block-css-indicator-color, #64748b);
+	padding: 12px;
+	margin: 16px 2px;
+}

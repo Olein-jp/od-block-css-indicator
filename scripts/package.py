@@ -26,7 +26,8 @@ with tempfile.TemporaryDirectory() as temporary:
     stage.mkdir()
     for name in (f"{slug}.php", "README.md", "LICENSE", "composer.json", "composer.lock"):
         shutil.copy2(root / name, stage / name)
-    shutil.copytree(root / "languages", stage / "languages")
+    for directory in ("languages", "includes", "build", "docs"):
+        shutil.copytree(root / directory, stage / directory)
     subprocess.run(["composer", "install", "--working-dir=" + str(stage), "--no-dev",
                     "--prefer-dist", "--no-interaction", "--no-progress",
                     "--no-scripts", "--no-plugins", "--optimize-autoloader"], check=True)

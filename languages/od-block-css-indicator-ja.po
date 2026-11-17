@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: OD Block CSS Indicator 0.0.0\n"
+"Project-Id-Version: OD Block CSS Indicator 0.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/Olein-jp/od-block-css-indicator/issues\n"
 "Last-Translator: Koji Kuno\n"
 "Language: ja\n"
@@ -28,8 +28,8 @@ msgstr "https://github.com/Olein-jp/od-block-css-indicator"
 
 #. Description of the plugin
 #: od-block-css-indicator.php
-msgid "Development foundation for OD Block CSS Indicator."
-msgstr "OD Block CSS Indicator の開発用ひな形です。"
+msgid "Visualize per-block custom CSS in the block editor without changing content."
+msgstr "コンテンツを変更せずに、ブロックエディター内のブロックごとの追加CSSを可視化します。"
 
 #. Author of the plugin
 #: od-block-css-indicator.php
@@ -41,6 +41,85 @@ msgstr "Koji Kuno"
 msgid "https://olein-design.com"
 msgstr "https://olein-design.com"
 
-#: od-block-css-indicator.php:76
+#: includes/settings.php:96
+#: build/index.js:1
+#: src/settings.js:135
+msgid "Could not save settings. Please try again."
+msgstr "設定を保存できませんでした。再試行してください。"
+
+#: od-block-css-indicator.php:79
 msgid "OD Block CSS Indicator: dependencies are missing. Run composer install or install the ZIP from GitHub Releases."
 msgstr "OD Block CSS Indicator: 依存ライブラリがありません。composer install を実行するか、GitHub Releases の ZIP をインストールしてください。"
+
+#: build/index.js:1
+#: src/index.js:29
+#: src/index.js:37
+msgid "Custom CSS is set"
+msgstr "追加CSSが設定されています"
+
+#: build/index.js:1
+#: src/settings.js:60
+msgid "Slate"
+msgstr "スレート"
+
+#: build/index.js:1
+#: src/settings.js:61
+msgid "Blue"
+msgstr "ブルー"
+
+#: build/index.js:1
+#: src/settings.js:62
+msgid "Teal"
+msgstr "ティール"
+
+#: build/index.js:1
+#: src/settings.js:63
+msgid "Amber"
+msgstr "アンバー"
+
+#: build/index.js:1
+#: src/settings.js:64
+msgid "Purple"
+msgstr "パープル"
+
+#: build/index.js:1
+#: src/settings.js:69
+#: src/settings.js:73
+msgid "Custom CSS visibility"
+msgstr "追加CSSの可視化"
+
+#: build/index.js:1
+#: src/settings.js:80
+msgid "Highlight blocks with custom CSS"
+msgstr "追加CSSのあるブロックを強調表示"
+
+#: build/index.js:1
+#: src/settings.js:89
+#: src/settings.js:91
+msgid "Key color"
+msgstr "キーカラー"
+
+#: build/index.js:1
+#: src/settings.js:111
+msgid "Outline preview"
+msgstr "アウトラインのプレビュー"
+
+#: build/index.js:1
+#: src/settings.js:120
+msgid "Reset color"
+msgstr "初期色に戻す"
+
+#: build/index.js:1
+#: src/settings.js:124
+msgid "Saving settings…"
+msgstr "設定を保存中…"
+
+#: build/index.js:1
+#: src/settings.js:126
+msgid "Settings saved for your account."
+msgstr "アカウントに設定を保存しました。"
+
+#: build/index.js:1
+#: src/settings.js:143
+msgid "Retry"
+msgstr "再試行"

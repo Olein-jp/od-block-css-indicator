@@ -2,9 +2,9 @@
 /**
  * Plugin Name: OD Block CSS Indicator
  * Plugin URI: https://github.com/Olein-jp/od-block-css-indicator
- * Description: Development foundation for OD Block CSS Indicator.
- * Version: 0.0.0
- * Requires at least: 5.9
+ * Description: Visualize per-block custom CSS in the block editor without changing content.
+ * Version: 0.1.0
+ * Requires at least: 7.0
  * Requires PHP: 7.4
  * Author: Koji Kuno
  * Author URI: https://olein-design.com
@@ -20,6 +20,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+require_once __DIR__ . '/includes/settings.php';
+require_once __DIR__ . '/includes/assets.php';
 
 /**
  * 翻訳と GitHub からの更新を初期化する.

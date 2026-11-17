@@ -4,3 +4,7 @@
 /.wp-env.override.json
 /.phpcs-cache
 /.DS_Store
+
+/build/
+/test-results/
+/playwright-report/

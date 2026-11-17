@@ -2,6 +2,7 @@
 <ruleset name="OD Block CSS Indicator">
 	<description>プラグインの WordPress コーディング規約。</description>
 	<file>od-block-css-indicator.php</file>
+	<file>includes</file>
 	<arg name="extensions" value="php"/>
 	<arg value="sp"/>
 	<rule ref="WordPress"/>
