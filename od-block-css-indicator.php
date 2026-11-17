@@ -3,7 +3,7 @@
  * Plugin Name: OD Block CSS Indicator
  * Plugin URI: https://github.com/Olein-jp/od-block-css-indicator
  * Description: Visualize per-block custom CSS in the block editor without changing content.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Requires at least: 7.0
  * Requires PHP: 7.4
  * Author: Koji Kuno
