@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="OD Block CSS Indicator">
+	<description>プラグインの WordPress コーディング規約。</description>
+	<file>od-block-css-indicator.php</file>
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+	<rule ref="WordPress"/>
+	<rule ref="WordPress.WP.I18n">
+		<properties><property name="text_domain" type="array"><element value="od-block-css-indicator"/></property></properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties><property name="prefixes" type="array"><element value="od_block_css_indicator"/></property></properties>
+	</rule>
+</ruleset>

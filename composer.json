@@ -1,0 +1,27 @@
+{
+  "name": "olein-jp/od-block-css-indicator",
+  "description": "OD Block CSS Indicator WordPress plugin.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4",
+    "inc2734/wp-github-plugin-updater": "^3.1.18"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^3.4",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "platform": {
+      "php": "7.4.33"
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "format": "phpcbf"
+  }
+}

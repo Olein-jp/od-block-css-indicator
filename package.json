@@ -1,0 +1,24 @@
+{
+  "name": "od-block-css-indicator",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.18.0",
+    "npm": ">=11.16.0"
+  },
+  "scripts": {
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "env:status": "wp-env status",
+    "env:logs": "wp-env logs",
+    "env:cli": "wp-env run cli wp",
+    "composer": "wp-env run cli --env-cwd=wp-content/plugins/od-block-css-indicator composer",
+    "lint:php": "npm run composer -- lint",
+    "i18n:pot": "wp-env run cli --env-cwd=wp-content/plugins/od-block-css-indicator wp i18n make-pot . languages/od-block-css-indicator.pot --domain=od-block-css-indicator --exclude=vendor,node_modules,dist --headers=Report-Msgid-Bugs-To:https://github.com/Olein-jp/od-block-css-indicator/issues",
+    "i18n:mo": "wp-env run cli --env-cwd=wp-content/plugins/od-block-css-indicator wp i18n make-mo languages",
+    "package": "python3 scripts/package.py"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^12.1.0"
+  }
+}
